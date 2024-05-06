@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KaleEend</title>
+<style>
+  body {
+    background-color: #000;
+    color: #00FF00; /* Green color for glitchy letters */
+    font-family: monospace; /* Ensures consistent spacing for matrix-like effect */
+    font-size: 24px; /* Adjust font size as needed */
+    text-align: center;
+    padding: 50px;
+    overflow: hidden; /* Hide overflowing glitch effect */
+    position: relative;
+  }
+
+  /* Glitch effect for letters */
+  .glitch {
+    position: absolute;
+    opacity: 0.5; /* Adjust opacity of glitchy letters */
+    pointer-events: none; /* Prevent glitchy letters from interfering with mouse events */
+    animation: glitch-anim 0.5s infinite alternate-reverse;
+  }
+
+  @keyframes glitch-anim {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  h1, p {
+    position: relative;
+    z-index: 1;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  img {
+    max-width: 25%; /* Adjust the percentage to change the size of the image */
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+</style>
+</head>
+<body>
+
+  <h1>Oh No! KaleEend Was Here!</h1>
+  <p>This is caused by bad security</p>
+  <img src="https://images.playground.com/376e6637c0cf41048c449e5df2c4130d.jpeg">
+</body>
+</html>
